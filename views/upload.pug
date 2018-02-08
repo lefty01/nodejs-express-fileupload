@@ -1,0 +1,7 @@
+extends layout
+
+
+block content
+  form(action="/fileupload", method="post", enctype="multipart/form-data")
+    input(type="file", multiple, name="uploadedFile")
+    button(type="submit", value="Upload") Upload File
